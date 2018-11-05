@@ -1,32 +1,74 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
 .App-header {
   background-color: #282c34;
+  background-image: url('./images/header.jpg');
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color:white;
+}
+  .App-header .headshot {
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    border:2px solid #007bff;
+    margin:10px;
+  }
+
+  .App-header .basic-info {
+    display: inline-block;
+    flex: none;
+  }
+
+    .App-header .basic-info h2 {
+      margin: 0 auto; 
+    }
+
+    .App-header .basic-info ul.info-resources {
+      margin: 0px;
+      padding: 0px;
+    }
+
+      .App-header .basic-info ul.info-resources li {
+        list-style-type: none;
+        display: inline-block;
+        padding: 0px 5px;
+        font-size: 20px;
+      }
+
+        .App-header .basic-info ul.info-resources li button {
+          background-color: white;
+        }
+
+        .App-header .basic-info ul.info-resources li button:hover {
+          background-color: #007bff;
+        }
+
+      .App-header .basic-info ul.info-resources li:first-child {
+        padding-left:0px;
+      }
+
+      .App-header .basic-info ul.info-resources li:last-child {
+        border-right: none;
+      }
+
+.section {
+  min-height: 100vh;
+  background-color: #282c34;
+}
+  
+.navigation-dropdown {
+  position: fixed;
+  left: 10px;
+  top: 10px;
 }
 
-.App-link {
-  color: #61dafb;
-}
+  .navigation-dropdown button {
+    background-color: white;
+  }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .navigation-dropdown a:hover {
+    background-color: #007bff;
+    color: white;
   }
-  to {
-    transform: rotate(360deg);
-  }
-}
